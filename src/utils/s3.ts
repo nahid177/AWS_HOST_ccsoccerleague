@@ -5,10 +5,10 @@ import { Upload } from '@aws-sdk/lib-storage';
 import { Readable } from 'stream';
 
 const s3Client = new S3Client({
-  region: process.env.AWS_REGION!,
+  region: process.env.AAWS_REGION!,
   credentials: {
-    accessKeyId: process.env.AWS_ACCESS_KEY_ID!,
-    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY!,
+    accessKeyId: process.env.AAWS_ACCESS_KEY_ID!,
+    secretAccessKey: process.env.AAWS_SECRET_ACCESS_KEY!,
   },
 });
 
