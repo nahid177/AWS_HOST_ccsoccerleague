@@ -33,7 +33,7 @@ export const uploadFileToS3 = async (
   try {
     await upload.done();
     return {
-      Location: `https://${params.Bucket}.s3.${process.env.AWS_REGION}.amazonaws.com/${key}`,
+      Location: `https://${params.Bucket}.s3.${process.env.AAWS_REGION}.amazonaws.com/${key}`,
     };
   } catch (error) {
     console.error('Error uploading to S3:', error);
